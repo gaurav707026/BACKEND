@@ -10,7 +10,7 @@ how to get the secret taken fro creating a bot?
 const { Telegraf } = require('telegraf');
 
 // Replace 'YOUR_BOT_TOKEN' with your actual bot token
-const bot = new Telegraf('7186792591:AAFzNXDOGyxmI1SMAf8WcB27m2zTUipX35g');
+const bot = new Telegraf('telegram_bot_token');
 
 // Define a simple command handler
 bot.start((ctx) => ctx.reply('Welcome!'));
