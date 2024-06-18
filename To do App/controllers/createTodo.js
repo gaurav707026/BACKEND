@@ -1,8 +1,9 @@
+const express = require("express");
 // import ToDo model
 const ToDo = require("../models/ToDo");
 
 // define route handler
-exports.createToDo = async (req, res) => {
+exports.createTodo = async (req, res) => {
     try{
         // extract title and description from request body
         const {title, description} = req.body;
@@ -19,8 +20,8 @@ exports.createToDo = async (req, res) => {
             }
         )
     }
-    catch(arr){
-        console.error(arr);
+    catch(err){
+        console.error(err);
         console.log(err);
         res.status(500)
         .json(

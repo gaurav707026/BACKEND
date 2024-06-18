@@ -12,8 +12,8 @@ app.use(express.json());
 // import routes for todo api
 const todoRoutes = require("./Routes/todos");
 
-// mount the todo api routes fro version control
-app.use("./api/v1", todoRoutes);
+// mount the todo api routes for version control
+app.use("/api/v1", todoRoutes);
 
 // start server
 app.listen(PORT, ()=>{
